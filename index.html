@@ -19,7 +19,7 @@ function initLandbot() {
   if (!myLandbot) {
     var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
     s.addEventListener('load', function() {
-      myLandbot = new Landbot.Popup({
+      var myLandbot = new Landbot.Livechat({
         configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2179934-LNTVOFIS2FT0F0BY/index.json',
       });
     });
